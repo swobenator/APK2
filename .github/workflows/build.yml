@@ -70,8 +70,8 @@ jobs:
       - name: Build Debug APK
         run: buildozer -v android debug
 
-      - name: Upload APK
-        uses: actions/upload-artifact@v3
+      - name:  Upload APK Artifact
+        uses: actions/upload-artifact@v4
         with:
-          name: mykivyapp-apk
+          name: Kivy-APK
           path: bin/*.apk
